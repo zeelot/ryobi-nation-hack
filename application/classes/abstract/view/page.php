@@ -2,7 +2,7 @@
 
 abstract class Abstract_View_Page extends Abstract_View_Layout {
 
-	public $title = 'Page';
+	public $title = 'Ryobi Inspire';
 
 	public function auth_info()
 	{
