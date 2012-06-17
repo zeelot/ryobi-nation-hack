@@ -65,4 +65,26 @@ class View_Page_Main_Index extends Abstract_View_Page {
 			),
 		);
 	}
+
+	public function banner_categories()
+	{
+		$category_route = Route::get('entry');
+
+		return array(
+			array(
+				'name'  => 'Featured Projects',
+				'image' => Media::url('images/entries/478/2.jpeg'),
+				'url'   => URL::site($category_route->uri(array(
+					'category' => 'featured'
+				))),
+			),
+			array(
+				'name'  => 'Top Projects',
+				'image' => Media::url('images/entries/514/1.jpeg'),
+				'url'  => URL::site($category_route->uri(array(
+					'category' => 'top'
+				))),
+			),
+		);
+	}
 }

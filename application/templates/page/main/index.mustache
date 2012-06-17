@@ -1,6 +1,14 @@
 <h1>Categories</h1>
 <div class="categories">
-	<ul>
+	<ul class="banner">
+		{{#banner_categories}}
+		<li>
+			<div class="name"><a href="{{url}}">{{name}}</a></div>
+			<div class="image"><a href="{{url}}"><img src="{{image}}" title="{{name}}" /></a></div>
+		</li>
+		{{/banner_categories}}
+	</ul>
+	<ul class="regular">
 		{{#categories}}
 		<li>
 			<div class="name"><a href="{{url}}">{{name}}</a></div>

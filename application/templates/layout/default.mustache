@@ -34,6 +34,20 @@
 				</ul>
 			</div>
 			{{/main_navigation}}
+
+			{{#previous_entry}}
+			<div class="previous-entry">
+				<h3>Last Project</h3>
+				<div class="entry">
+					<div class="image"><img src="{{image}}" title="{{title}}" /></div>
+					<div class="info-bubble">
+						<div class="inspirations" title="{{inspiration_count}} people were inspired by this project">{{inspiration_count}}</div>
+						<div class="fb-share"></div>
+						<div class="pin"></div>
+					</div>
+				</div>
+			</div>
+			{{/previous_entry}}
 		</div>
 		<div id="footer"></div>
 	</div>

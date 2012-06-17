@@ -28,9 +28,11 @@ class Controller_Main extends Abstract_Controller_Page {
 	{
 		$this->_view
 			->bind('category', $category)
-			->bind('entry', $entry);
+			->bind('entry', $entry)
+			->bind('previous_entry', $previous);
 
 		$category = $this->request->param('category');
+		$previous = ORM::factory('entry', $this->request->query('last'));
 
 		if ($this->request->param('entry'))
 		{
@@ -38,9 +40,24 @@ class Controller_Main extends Abstract_Controller_Page {
 		}
 		else
 		{
-			$entry = ORM::factory('entry')
-				->where('category', '=', $category)
-				->find();
+			if ($category === 'featured')
+			{
+				$entry = ORM::factory('entry')
+					->where('is_featured', '=', 1)
+					->find();
+			}
+			elseif ($category === 'top')
+			{
+				$entry = ORM::factory('entry')
+					->where('is_featured', '=', 1)
+					->find();
+			}
+			else
+			{
+				$entry = ORM::factory('entry')
+					->where('category', '=', $category)
+					->find();
+			}
 		}
 
 		if ($this->request->method() === HTTP_Request::POST)
@@ -54,10 +71,27 @@ class Controller_Main extends Abstract_Controller_Page {
 				}
 			}
 
-			$next_entry = ORM::factory('entry')
-				->where('category', '=', $category)
-				->where('id', '>', $entry->id)
-				->find();
+			if ($category === 'featured')
+			{
+				$next_entry = ORM::factory('entry')
+					->where('is_featured', '=', 1)
+					->where('id', '>', $entry->id)
+					->find();
+			}
+			elseif ($category === 'top')
+			{
+				$next_entry = ORM::factory('entry')
+					->where('is_featured', '=', 1)
+					->where('id', '>', $entry->id)
+					->find();
+			}
+			else
+			{
+				$next_entry = ORM::factory('entry')
+					->where('category', '=', $category)
+					->where('id', '>', $entry->id)
+					->find();
+			}
 
 			if ($next_entry->loaded())
 			{
@@ -65,7 +99,7 @@ class Controller_Main extends Abstract_Controller_Page {
 				$this->request->redirect(Route::url('entry', array(
 					'category' => $category,
 					'entry'    => $next_entry->id,
-				)));
+				)).URL::query(array('last' => $entry->id), FALSE));
 			}
 			else
 			{
