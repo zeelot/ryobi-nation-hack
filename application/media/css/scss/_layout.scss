@@ -72,6 +72,11 @@ h1 {
 		color: #C2C1C0;
 		background: url('../../images/nav-button-reg-217x32.png');
 
+		&.find-inspiration {
+			background-image: url('../../images/nav-button-special-217x32.png');
+			color: #FFF;
+		}
+
 		&:hover {
 			background-position: 0 -32px;
 		}
@@ -160,4 +165,44 @@ h1 {
 	color: #555;
 	-webkit-box-shadow: 0 1px 1px #999;
 	background: #FFF;
+}
+
+.categories {
+	ul {
+		margin: 0 -10px 0 18px;
+	}
+
+	li {
+		position: relative;
+		float: left;
+		display: block;
+		overflow: hidden;
+		width: 151px;
+		height: 151px;
+
+		border: 1px solid #999;
+		padding: 5px;
+		background: #FFF;
+
+		margin-right: 10px;
+		margin-bottom: 10px;
+
+		.name a {
+			position: absolute;
+			width: 141px;
+			z-index: 100;
+			background: #000;
+			color: #FFF;
+			font-family: $font-futura;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 5px;
+		}
+		.image {
+			position: relative;
+			overflow: hidden;
+			height: 151px;
+			width: 151px;
+		}
+	}
 }
