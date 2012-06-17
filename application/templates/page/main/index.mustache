@@ -1,1 +1,11 @@
-Hello New World!
+<h2>Categories</h2>
+<div class="categories">
+	<ul>
+		{{#categories}}
+		<li>
+			<div class="image"><a href="{{url}}"><img src="{{image}}" title="{{name}}" /></a></div>
+			<div class="name"><a href="{{url}}">{{name}}</a></div>
+		</li>
+		{{/categories}}
+	</ul>
+</div>

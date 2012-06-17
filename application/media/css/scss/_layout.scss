@@ -4,5 +4,28 @@
 
 
 // These variables determine the grid sizes
-$blueprint_grid_columns: 16;
-$blueprint_grid_width: 40px;
+$blueprint-grid-columns: 16;
+$blueprint-container-size: 940px;
+$blueprint-grid-margin: 20px;
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
+
+#page {
+	@include container;
+	@include border-radius(3px);
+
+	margin-top: 150px;
+	border: 1px solid #000;
+	background: #CCC;
+}
+#header {
+	@include column(16, true);
+
+	height: 100px;
+}
+#content {
+	@include column(12);
+}
+#sidebar {
+	@include column(4, true);
+}

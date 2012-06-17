@@ -1,0 +1,283 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"gui",
+				"Git: Gui"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/zeelot/Projects/projecttemplate/test7",
+		"/Users/zeelot/Projects/projecttemplate/test6",
+		"/Users/zeelot/Projects/projecttemplate/test5",
+		"/Users/zeelot/Projects/projecttemplate/vagrant/Vagrantfile",
+		"/Users/zeelot/Projects/projecttemplate/test4",
+		"/Users/zeelot/Projects/projecttemplate/test3",
+		"/Users/zeelot/Projects/projecttemplate/test2",
+		"/Users/zeelot/Projects/projecttemplate/test1",
+		"/Users/zeelot/Projects/projecttemplate/miniond",
+		"/Users/zeelot/Projects/projecttemplate/application/bootstrap.php",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/compiled/app.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/routers/500.AppRouter.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/999.init.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/vendor/underscore-1.3.3.min.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/000.bootstrap.js",
+		"/Users/zeelot/Projects/projecttemplate/application/config/assets.php",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/compiled/.gitignore",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/compiled/.gitignore",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/views/.gitignore",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/models/.gitignore",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/collections/.gitignore",
+		"/Users/zeelot/Projects/projecttemplate/application/config/minion-media.php",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/routers/AppRouter.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/bootstrap.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/js/lib/init.js",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/compiled/styles.css",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/styles.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/_base.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/_modules.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/_layout.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/_elements.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/media/css/scss/_mixins.scss",
+		"/Users/zeelot/Projects/projecttemplate/application/config/modules.php",
+		"/Users/zeelot/Dropbox/zeelot/sublime/license.txt",
+		"/Users/zeelot/Projects/tinypay.me/application/classes/url.php",
+		"/Users/zeelot/Projects/tpm2g/application/config/locale.php",
+		"/Users/zeelot/Projects/tpm2g/application/classes/controller/ajax/search.php",
+		"/Users/zeelot/Projects/tpm2g/application/views/page/user/marketplace/stats_sales.php",
+		"/Users/zeelot/Projects/tpm2g/application/classes/controller/ajax/stats.php",
+		"/Users/zeelot/Projects/tpm2g/application/classes/controller/page/user.php",
+		"/Users/zeelot/Projects/tpm2g/application/views/page/user/marketplace/stats.php",
+		"/Users/zeelot/Projects/tpm2g/application/assets/js/system/mmSearchClass.js",
+		"/Users/zeelot/Projects/tpm2g/application/assets/js/system/mmMarketplaceStatsClass.js",
+		"/Users/zeelot/Projects/tpm2g/application/classes/controller/ajax/order.php",
+		"/Users/zeelot/Projects/tpm2g/application/views/page/search.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/i18n/strings.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/views/page/user/marketplace/stats.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/views/page/user/header.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/views/page/user/marketplace/branding.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/assets/js/system/mmMarketplaceStatsClass.js",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/assets/js/system/mmMarketplaceBrandingClass.js",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/classes/controller/page/user.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/config/assets.php",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/assets/js/system/mmMain.js",
+		"/Users/zeelot/Documents/sublime-projects/tpm2g/application/classes/controller/ajax/stats.php",
+		"/Users/zeelot/Projects/tpm2g/application/assets/js/system/mmMain.js",
+		"/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf",
+		"/Applications/MAMP/conf/apache/extra/httpd-ssl.conf",
+		"/Applications/MAMP/conf/apache/httpd.conf",
+		"/Users/zeelot/Projects/tpm2g/system/classes/kohana/core.php",
+		"/Applications/MAMP/logs/apache_error.log",
+		"/Users/zeelot/Projects/tpm2g/system/classes/kohana/request.php",
+		"/Applications/MAMP/logs/php_error.log",
+		"/Users/zeelot/Projects/tpm2g/www/index.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/zeelot/Projects/projecttemplate/application/media/js/lib",
+			"/Users/zeelot/Projects/tpm2g/application",
+			"/Users/zeelot/Projects/tpm2g/application/",
+			"/Users/zeelot/Projects/tpm2g/application/assets/js",
+			"/Users/zeelot/Projects/tpm2g/application/",
+			"/Users/zeelot/Projects/tpm2g/application/vendor/adwords/",
+			"/Users/zeelot/Projects/tpm2g/application/vendor/adwords/src/Google",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"JQuery",
+			"revenue",
+			"months",
+			"curren",
+			"currency",
+			"searchRequestStart",
+			"search",
+			"searchRequestSuccess",
+			"Mingle::get('marketplac",
+			"Mingle::get(",
+			"DOMAIN",
+			"moderate.php",
+			"branding.php",
+			"branding",
+			"include marketplace",
+			"include 'marketplace",
+			"include marketplace",
+			"include marketplace/",
+			"options",
+			"datepicker.js",
+			".js",
+			"datepicker",
+			"datepicker.js",
+			"mm.runtime ",
+			"mm.runtime",
+			"runtime",
+			"runtime:",
+			"mm.",
+			"mmItemForm",
+			"mm.runtime=",
+			"mm.runtime =",
+			"mm.runtime",
+			"Browser",
+			"ssl",
+			"Content-Type:"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 27.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"syskocore",
+				"system/classes/kohana/core.php"
+			],
+			[
+				"configlocale",
+				"application/config/locale.php"
+			],
+			[
+				"viewsearch",
+				"application/views/page/search.php"
+			],
+			[
+				"controlpageuser",
+				"application/classes/controller/page/user.php"
+			],
+			[
+				"viewuserstats",
+				"application/views/page/user/marketplace/stats.php"
+			],
+			[
+				"controajaxstats",
+				"application/classes/controller/ajax/stats.php"
+			],
+			[
+				"stats.js",
+				"application/assets/js/system/mmMarketplaceStatsClass.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/zeelot/Projects/projecttemplate/ji-chan.com.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 401.0,
+	"status_bar_visible": true
+}

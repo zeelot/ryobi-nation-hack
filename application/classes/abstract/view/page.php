@@ -19,6 +19,15 @@ abstract class Abstract_View_Page extends Abstract_View_Layout {
 		);
 	}
 
+	public function main_navigation()
+	{
+		return array(
+			'find_inspiration' => Route::url('home'),
+			'your_inspiration' => Route::url('your-inspirations'),
+			'your_projects'    => Route::url('your-projects'),
+		);
+	}
+
 	public function js_export()
 	{
 		return json_encode($this->js_array());
