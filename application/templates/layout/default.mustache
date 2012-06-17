@@ -18,7 +18,14 @@
 <body id="{{view_name}}">
 	<div id="page">
 		<div id="header">
-
+			{{#auth_info}}
+			<div class="user-info">
+				<div class="avatar"><img src="{{avatar}}" /></div>
+				<div class="welcome">Welcome, Lorenzo!</div>
+				<div class="inspirations" title="You've inspired 47 people!">47</div>
+				<div class="log-out">( <a href="#">log out</a> )</div>
+			</div>
+			{{/auth_info}}
 		</div>
 		<div id="content">
 		{{>content}}

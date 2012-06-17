@@ -8,7 +8,7 @@ class View_Page_Main_Entry extends Abstract_View_Page {
 
 	public function previous_entry()
 	{
-		if ( ! $this->previous_entry)
+		if ( ! $this->previous_entry OR ! $this->previous_entry->loaded())
 			return NULL;
 
 		return array(
@@ -22,9 +22,10 @@ class View_Page_Main_Entry extends Abstract_View_Page {
 	public function entry_details()
 	{
 		return array(
-			'title'       => $this->entry->title,
-			'image'       => Media::url('images/entries/'.$this->entry->image.'/1.jpeg'),
-			'description' => $this->entry->description,
+			'title'             => $this->entry->title,
+			'image'             => Media::url('images/entries/'.$this->entry->image.'/1.jpeg'),
+			'description'       => $this->entry->description,
+			'inspiration_count' => $this->previous_entry->inspiration_count(),
 		);
 	}
 }

@@ -4,6 +4,13 @@ abstract class Abstract_View_Page extends Abstract_View_Layout {
 
 	public $title = 'Page';
 
+	public function auth_info()
+	{
+		return array(
+			'avatar' => Media::url('images/profile.png'),
+		);
+	}
+
 	public function assets($assets)
 	{
 		$assets->group('default-template');

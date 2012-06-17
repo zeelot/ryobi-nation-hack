@@ -31,6 +31,30 @@ body {
 	@include column(16, true);
 
 	height: 79px;
+	position: relative;
+
+	.user-info {
+		font-family: $font-arial;
+		font-size: 12px;
+		height: 25px;
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+
+		> div {
+			display: block;
+			float: left;
+			height: 24px;
+			line-height: 28px;
+			vertical-align: bottom;
+			margin-right: 10px;
+		}
+
+		.inspirations {
+			padding-left: 28px;
+			background: url('../../images/thumbs-up-count.png') no-repeat left bottom;
+		}
+	}
 }
 #content {
 	@include column(12);
@@ -173,6 +197,24 @@ h3 {
 		color: #FFF;
 		font-family: $font-futura;
 		text-transform: uppercase;
+
+		.fb-share, .pin {
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			float: right;
+			display: block;
+
+			&:hover {
+				background-position: 0 -20px;
+			}
+		}
+		.fb-share {
+			background: url('../../images/share-project-facebook.png') no-repeat;
+		}
+		.pin {
+			background: url('../../images/share-project-pinterest.png') no-repeat;
+		}
 	}
 
 	.image {
