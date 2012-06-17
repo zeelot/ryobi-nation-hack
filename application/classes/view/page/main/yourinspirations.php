@@ -13,6 +13,10 @@ class View_Page_Main_YourInspirations extends Abstract_View_Page {
 				'title'       => $entry->title,
 				'image'       => Media::url('images/entries/'.$entry->image.'/1.jpeg'),
 				'description' => $entry->description,
+				'url'         => Route::url('entry', array(
+					'category' => $entry->category,
+					'entry'    => $entry->id,
+				)),
 			);
 		}
 
