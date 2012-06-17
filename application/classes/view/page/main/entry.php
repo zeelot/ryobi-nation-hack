@@ -33,4 +33,25 @@ class View_Page_Main_Entry extends Abstract_View_Page {
 	{
 		return ($this->entry->id <= 10);
 	}
+
+	public function tools_used()
+	{
+		return array(
+			array(
+				'image'  => Media::url('images/chainsaw.png'),
+				'name'   => '18 IN. CHAIN SAW',
+				'button' => Media::url('images/button-wishlist.png'),
+			),
+			array(
+				'image'  => Media::url('images/tablesaw.png'),
+				'name'   => '18 VOLT ONE+™ 5-1/2" CIRCULAR SAW WITH LASER',
+				'button' => Media::url('images/button-wishlist.png'),
+			),
+			array(
+				'image'  => Media::url('images/drill.png'),
+				'name'   => '12 VOLT COMPACT DRILL',
+				'button' => Media::url('images/button-wishlist.png'),
+			),
+		);
+	}
 }

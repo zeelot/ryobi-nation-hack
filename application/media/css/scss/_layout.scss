@@ -415,3 +415,40 @@ h3 {
 		}
 	}
 }
+
+.tools-used {
+	@include clearfix;
+
+	margin-bottom: 50px;
+
+	li {
+		float: left;
+		display: block;
+		margin-left: 20px;
+		padding: 5px;
+		height: 100px;
+		width: 193px;
+		font-size: 12px;
+		font-family: $font-arial;
+		line-height: 1.5em;
+		color: #555;
+		-webkit-box-shadow: 0 1px 1px #999;
+		background: #FFF;
+
+		.image {
+			float: left;
+		}
+		.name {
+			float: right;
+			width: 130px;
+		}
+		.button {
+			text-align: center;
+			width: 190px;
+
+			img {
+				margin: 10px auto 0;
+			}
+		}
+	}
+}

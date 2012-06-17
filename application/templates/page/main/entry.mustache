@@ -13,4 +13,13 @@
 	</div>
 </div>
 <div class="entry-description">{{description}}</div>
+<ul class="tools-used">
+{{#tools_used}}
+	<li>
+		<div class="image"><img src="{{image}}" title="{{name}}" /></div>
+		<div class="name">{{name}}</div>
+		<div class="button"><img src="{{button}}" /></div>
+	</li>
+{{/tools_used}}
+</ul>
 {{/entry_details}}
