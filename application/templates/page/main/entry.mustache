@@ -1,13 +1,16 @@
 {{#entry_details}}
+<h1>Hot or Not?</h1>
+<div class="single-entry">
 	<h2>{{title}}</h2>
 	<div class="image">
 		<img src="{{image}}" title="{{title}}" />
 	</div>
 	<div class="vote-form">
 		<form action="" method="post">
-			<button type="submit" name="vote" value="up">Up</button>
-			<button type="submit" name="vote" value="down">Down</button>
+			<button class="yes" type="submit" name="vote" value="up">Up</button>
+			<button class="no" type="submit" name="vote" value="down">Down</button>
 		</form>
 	</div>
-	<div class="description">{{description}}</div>
+</div>
+<div class="entry-description">{{description}}</div>
 {{/entry_details}}

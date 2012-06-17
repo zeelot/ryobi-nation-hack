@@ -1,7 +1,8 @@
 /**
  * Contains layout-specific SCSS like grids and positioning
  */
-
+$font-futura: Futura, “Century Gothic”, AppleGothic, sans-serif;
+$font-arial: Arial, Helvetica, sans-serif;
 
 // These variables determine the grid sizes
 $blueprint-grid-columns: 16;
@@ -10,22 +11,153 @@ $blueprint-grid-margin: 20px;
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
 $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
+body {
+	background:
+		url('../../images/top-bar.png') no-repeat center top,
+		url('../../images/top-bar-bg.png') repeat-x,
+		#F1F1F1;
+}
+
 #page {
 	@include container;
 	@include border-radius(3px);
 
-	margin-top: 150px;
-	border: 1px solid #000;
-	background: #CCC;
+	background: url('../../images/header.png') no-repeat center -5px, #BDBDBD;
+
+	margin-top: 180px;
+	border: 1px solid #CACACA;
 }
 #header {
 	@include column(16, true);
 
-	height: 100px;
+	height: 79px;
 }
 #content {
 	@include column(12);
 }
 #sidebar {
 	@include column(4, true);
+	margin-top: 90px;
+}
+
+h1 {
+	font-size: 48px;
+	font-family: $font-futura;
+	text-transform: uppercase;
+	color: #CF372C;
+	margin: 20px;
+}
+
+#navigation {
+	width: 200px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		margin-bottom: 7px;
+	}
+
+	a {
+		display: block;
+		height: 32px;
+		line-height: 32px;
+		font-size: 16px;
+		font-family: $font-futura;
+		text-transform: uppercase;
+		text-align: center;
+		text-decoration: none;
+		color: #C2C1C0;
+		background: url('../../images/nav-button-reg-217x32.png');
+
+		&:hover {
+			background-position: 0 -32px;
+		}
+		&:active {
+			background-position: 0 -64px;
+		}
+	}
+}
+
+.single-entry {
+	border: 1px solid #999;
+	background: #F1F1F1;
+	width: 640px;
+	height: 510px;
+	position: relative;
+	padding: 5px;
+	margin-left: 20px;
+
+	h2 {
+		position: absolute;
+		display: block;
+		width: 630px;
+		z-index: 100;
+		padding: 5px;
+		background: #000;
+		color: #FFF;
+		font-family: $font-futura;
+		text-transform: uppercase;
+	}
+
+	.image {
+		position:relative;
+		overflow: hidden;
+		width: 640px;
+		height: 510px;
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			min-width: 640px;
+			min-height: 510px;
+		}
+	}
+
+	.vote-form {
+		z-index: 100;
+		position: absolute;
+		top: 400px;
+		left: 225px;
+
+		button {
+			cursor: pointer;
+			height: 80px;
+			width: 80px;
+			border: none;
+			overflow: hidden;
+			text-indent: 100000px;
+
+			&.yes {
+				background: url('../../images/thumbs-up-80x80.png') no-repeat;
+			}
+			&.no {
+				margin-left: 50px;
+				background: url('../../images/thumbs-down-80x80.png') no-repeat;
+			}
+
+			&:hover {
+				background-position: 0 -80px;
+			}
+			&:active {
+				background-position: 0 -160px;
+			}
+		}
+	}
+}
+
+.entry-description {
+	width: 618px;
+	padding: 12px 16px;
+	margin: 20px;
+	font-size: 12px;
+	font-family: $font-arial;
+	line-height: 1.5em;
+	color: #555;
+	-webkit-box-shadow: 0 1px 1px #999;
+	background: #FFF;
 }
