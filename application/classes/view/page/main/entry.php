@@ -28,4 +28,9 @@ class View_Page_Main_Entry extends Abstract_View_Page {
 			'inspiration_count' => $this->previous_entry->inspiration_count(),
 		);
 	}
+
+	public function is_inspiring()
+	{
+		return ($this->entry->id <= 10);
+	}
 }

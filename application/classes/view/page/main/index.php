@@ -79,7 +79,7 @@ class View_Page_Main_Index extends Abstract_View_Page {
 				))),
 			),
 			array(
-				'name'  => 'Top Projects',
+				'name'  => 'Most Inspiring Projects',
 				'image' => Media::url('images/entries/514/1.jpeg'),
 				'url'  => URL::site($category_route->uri(array(
 					'category' => 'top'

@@ -54,9 +54,7 @@ class Controller_Main extends Abstract_Controller_Page {
 			}
 			else
 			{
-				$entry = ORM::factory('entry')
-					->where('category', '=', $category)
-					->find();
+				$entry = ORM::factory('entry')->find();
 			}
 		}
 
@@ -81,8 +79,8 @@ class Controller_Main extends Abstract_Controller_Page {
 			elseif ($category === 'top')
 			{
 				$next_entry = ORM::factory('entry')
-					->where('is_featured', '=', 1)
 					->where('id', '>', $entry->id)
+					->where('id', '<=', 10)
 					->find();
 			}
 			else

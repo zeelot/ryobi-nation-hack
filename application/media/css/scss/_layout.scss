@@ -13,8 +13,8 @@ $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 
 body {
 	background:
-		url('../../images/top-bar.png') no-repeat center top,
-		url('../../images/top-bar-bg.png') repeat-x,
+		//url('../../images/top-bar.png') no-repeat center top,
+		//url('../../images/top-bar-bg.png') repeat-x,
 		#F1F1F1;
 }
 
@@ -24,7 +24,7 @@ body {
 
 	background: url('../../images/header.png') no-repeat center -5px, #BDBDBD;
 
-	margin-top: 180px;
+	margin-top: 10px;
 	border: 1px solid #CACACA;
 }
 #header {
@@ -197,6 +197,16 @@ h3 {
 		color: #FFF;
 		font-family: $font-futura;
 		text-transform: uppercase;
+
+		.inspiring {
+			display: inline;
+			margin-left: 20px;
+			padding-left: 20px;
+			padding-top: 4px;
+			background: url('../../images/trophy.png') no-repeat left bottom;
+			background-size: 18px 18px;
+			font-size: 12px;
+		}
 
 		.fb-share, .pin {
 			width: 20px;
